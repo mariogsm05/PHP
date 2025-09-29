@@ -48,7 +48,7 @@
 
         echo "<tr>";
         echo "<th>$i</th>";
-        echo "<th>{$nums[$i]}</th>";
+        echo "<th>$nums[$i]</th>";
         echo "<th>$sumador</th>";
         echo "<th>$mediaPares</th>";
         echo "<th>$mediaImpares</th>";
