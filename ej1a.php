@@ -14,13 +14,13 @@
 
     echo "<table border= 1>";
     echo "<tr><th>INDICE</th><th>VALOR</th><th>Suma</th></tr>";
-    for ($i = 1; $i < 20; $i++)
+    for ($i = 0; $i < 20; $i++)
     {
         $sumador = $sumador + $nums[$i];
 
         echo "<tr>";
         echo "<th>$i</th>";
-        echo "<th>{$nums[$i]}</th>";
+        echo "<th>$nums[$i]</th>";
         echo "<th>$sumador</th>";
         echo "</tr>";
     }
