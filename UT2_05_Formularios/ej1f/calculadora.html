@@ -1,0 +1,28 @@
+<HTML>
+<HEAD> <TITLE> FORMULARIO BASE </TITLE>
+</HEAD>
+<BODY>
+    <form name="calculadora" action="calculadora.php" method="post">
+        <h2>CALCULADORA</h2>
+
+        <label>OPERADOR 1</label>
+        <input type="number" name="operador1" value="">
+        <br>
+        <br>
+        <label>OPERADOR 2</label>
+        <input type="number" name="operador2" value="">
+
+        <br>
+        <br>
+        <label>SELECCIONE LA OPCION QUE QUIERA : </label><br><br>
+        <input type="radio" name="operacion" value="suma">SUMA<br>
+        <input type="radio" name="operacion" value="resta">RESTA<br>
+        <input type="radio" name="operacion" value="multiplicacion">MULTIPLICACION<br>
+        <input type="radio" name="operacion" value="division">DIVISION<br>
+
+        <br><input type="submit" value="enviar">
+
+        <input type="reset" value="borrar">
+    </form>
+</BODY>
+</HTML>
