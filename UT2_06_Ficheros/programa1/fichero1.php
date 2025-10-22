@@ -16,11 +16,11 @@
         $fechaN = limpiar_campo($_POST['fechaN']);
         $localidad = limpiar_campo($_POST['localidad']);
 
-        $nombre = str_pad(substr($nombre, 0, 40), 40, " ", STR_PAD_RIGHT);
-        $apellido1 = str_pad(substr($apellido1, 0, 41), 41, " ", STR_PAD_RIGHT);
-        $apellido2 = str_pad(substr($apellido2, 0, 41), 41, " ", STR_PAD_RIGHT);
-        $fechaN = str_pad(substr($fechaN, 0, 11), 11, " ", STR_PAD_RIGHT);
-        $localidad = str_pad(substr($localidad, 0, 27), 27, " ", STR_PAD_RIGHT);
+        $nombre = str_pad(substr($nombre, 0, 40), 41, " ", STR_PAD_RIGHT);
+        $apellido1 = str_pad(substr($apellido1, 0, 41), 42, " ", STR_PAD_RIGHT);
+        $apellido2 = str_pad(substr($apellido2, 0, 41), 42, " ", STR_PAD_RIGHT);
+        $fechaN = str_pad(substr($fechaN, 0, 10), 11, " ", STR_PAD_RIGHT);
+        $localidad = str_pad(substr($localidad, 0, 27), 28, " ", STR_PAD_RIGHT);
 
         $linea = $nombre . $apellido1 . $apellido2 . $fechaN . $localidad . "\n";
 
