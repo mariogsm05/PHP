@@ -81,7 +81,7 @@ $conn = null;
 
 function obtenerIdProducto($conn)
 {
-    $sql = "SELECT ID_PRODUCTO FROM producto"; 
+    $sql = "SELECT ID_PRODUCTO FROM producto ORDER BY ID_PRODUCTO DESC LIMIT 1"; 
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
@@ -92,7 +92,7 @@ function obtenerIdProducto($conn)
     {
         foreach ($ultimoNum as $num)
         {
-            $MaxNum = intval(substr($num, 1)); # intval para convertir a entero
+            $MaxNum = intval(substr($num, 1)); // intval para convertir a entero
         }
     }
 

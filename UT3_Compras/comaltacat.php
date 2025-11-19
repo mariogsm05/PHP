@@ -56,7 +56,7 @@ $conn = null;
 
 function obtenerIdCategoria($conn)
 {
-    $sql = "SELECT ID_CATEGORIA FROM categoria"; 
+    $sql = "SELECT ID_CATEGORIA FROM categoria ORDER BY ID_CATEGORIA DESC LIMIT 1"; 
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
@@ -67,7 +67,7 @@ function obtenerIdCategoria($conn)
     {
         foreach ($ultimoNum as $num)
         {
-            $MaxNum = intval(substr($num, 2)); # intval para convertir a entero
+            $MaxNum = intval(substr($num, 2)); // intval para convertir a entero
         }
     }
 
