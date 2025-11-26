@@ -89,7 +89,7 @@
             $stmt_emple_depart->execute();
 
             $conn->commit();
-            echo "<h3>EMPLEADO DADO DE ALTA</h3>";
+            echo "<br><br><h3>EMPLEADO DADO DE ALTA</h3>";
             echo "<p>DNI EMPLEADO: $dni</p>";
             echo "<p>NOMBRE EMPLEADO: $nombre</p>";
             echo "<p>APELLIDOS EMPLEADO: $apellidos</p>";
