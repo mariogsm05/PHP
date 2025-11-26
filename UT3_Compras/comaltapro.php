@@ -92,7 +92,7 @@ function obtenerIdProducto($conn)
     {
         foreach ($ultimoNum as $num)
         {
-            $MaxNum = intval(substr($num, 1)); // intval para convertir a entero
+            $MaxNum = intval(substr($num, 1)); 
         }
     }
 
